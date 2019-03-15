@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FILEHEADER</key>
+	<string>
+/*
+ *
+ *     iiii                 AAA                                                                              tttt          
+ *    i::::i               A:::A                                                                           ttt:::t          
+ *     iiii               A:::::A                                                                          t:::::t          
+ *                       A:::::::A                                                                         t:::::t          
+ *   iiiiiii            A:::::::::A           ggggggggg   ggggg    eeeeeeeeeeee    nnnn  nnnnnnnn    ttttttt:::::ttttttt    
+ *   i:::::i           A:::::A:::::A         g:::::::::ggg::::g  ee::::::::::::ee  n:::nn::::::::nn  t:::::::::::::::::t    
+ *    i::::i          A:::::A A:::::A       g:::::::::::::::::g e::::::eeeee:::::een::::::::::::::nn t:::::::::::::::::t    
+ *    i::::i         A:::::A   A:::::A     g::::::ggggg::::::gge::::::e     e:::::enn:::::::::::::::ntttttt:::::::tttttt    
+ *    i::::i        A:::::A     A:::::A    g:::::g     g:::::g e:::::::eeeee::::::e  n:::::nnnn:::::n      t:::::t          
+ *    i::::i       A:::::AAAAAAAAA:::::A   g:::::g     g:::::g e:::::::::::::::::e   n::::n    n::::n      t:::::t          
+ *    i::::i      A:::::::::::::::::::::A  g:::::g     g:::::g e::::::eeeeeeeeeee    n::::n    n::::n      t:::::t          
+ *    i::::i     A:::::AAAAAAAAAAAAA:::::A g::::::g    g:::::g e:::::::e             n::::n    n::::n      t:::::t    tttttt
+ *   i::::::i   A:::::A             A:::::Ag:::::::ggggg:::::g e::::::::e            n::::n    n::::n      t::::::tttt:::::t
+ *   i::::::i  A:::::A               A:::::Ag::::::::::::::::g  e::::::::eeeeeeee    n::::n    n::::n      tt::::::::::::::t
+ *   i::::::i A:::::A                 A:::::Agg::::::::::::::g   ee:::::::::::::e    n::::n    n::::n        tt:::::::::::tt
+ *   iiiiiiiiAAAAAAA                   AAAAAAA gggggggg::::::g     eeeeeeeeeeeeee    nnnnnn    nnnnnn          ttttttttttt  
+ *                                                     g:::::g                                                              
+ *                                         gggggg      g:::::g                                                              
+ *                                         g:::::gg   gg:::::g                                                              
+ *                                          g::::::ggg:::::::g                                                              
+ *                                           gg:::::::::::::g                                                               
+ *                                             ggg::::::ggg                                                                 
+ *                                                gggggg
+ *
+ *
+ *
+ *  File created    :      ___DATE___
+ *  File name       :      ___FILENAME___
+ *  Author          :      ___FULLUSERNAME___
+ *  Copyright       :      ___COPYRIGHT___
+ *  WebSite         :      www.xfj100.com
+ *
+ *  Description     :      ___PACKAGENAME___ source code
+ *
+ */
+    </string>
+</dict>
+</plist>

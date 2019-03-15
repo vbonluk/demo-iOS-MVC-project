@@ -1,0 +1,61 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+inhibit_all_warnings!
+
+target 'demoProject' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for demoProject
+  pod 'YTKNetwork'
+  pod 'SDWebImage', '~> 4.0'
+  pod 'Masonry'
+  pod 'IQKeyboardManager'
+  pod 'MBProgressHUD', '~> 1.1.0'
+  pod 'MJRefresh'
+  pod 'SDCycleScrollView','~> 1.75'
+  pod 'EAIntroView'
+  pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
+  pod 'YYModel'
+  pod 'JPush'
+  pod 'JAnalytics'
+  pod 'JShare'
+  pod 'SAMKeychain'
+  pod 'CocoaLumberjack'
+  pod 'JXCategoryView'
+  pod 'RealReachability'
+  pod 'BMKLocationKit'
+  pod 'YYText'
+  pod 'YLProgressBar'
+  pod 'LYEmptyView'
+  pod 'TOCropViewController'
+  pod 'SAMKeychain'
+  pod 'BaiduMapKit'
+
+  target 'demoProjectTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'demoProjectUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+  
+  
+  # 消除警告
+  # Xcode 9 --> deployment target 4.3
+  # Xcode 10 --> deployment target 8.0
+  # Xcode10的这次更新直接把deployment target提到了8.0，所以对于之前的一些第三方库会出现这样的问题。
+  post_install do |installer|
+      installer.pods_project.targets.each do |target|
+          target.build_configurations.each do |config|
+              if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 8.0
+                  config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '8.0'
+              end
+          end
+      end
+  end
+
+end

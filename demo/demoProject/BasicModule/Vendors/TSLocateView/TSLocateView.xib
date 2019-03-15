@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1" userLabel="LocateView" customClass="TSLocateView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="499"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKD-sy-LPW">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="499"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="VFD-jC-Era" appends="YES" id="OaC-ZY-lQD"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7T-bJ-rhR">
+                    <rect key="frame" x="0.0" y="239" width="320" height="260"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNf-jM-PJo">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9N-4a-Vnp">
+                                    <rect key="frame" x="265" y="0.0" width="55" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="55" id="eWD-Z8-uZ1"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="确定">
+                                        <color key="titleColor" red="0.98431372549999996" green="0.31764705879999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="goConfirm:" destination="1" eventType="touchUpInside" id="9qH-0j-U0q"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rb8-q5-iBs">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="Uqx-vQ-dW3"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="取消">
+                                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="goCancel:" destination="1" eventType="touchUpInside" id="0X5-bu-rjY"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="定位城市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQc-Ww-Jcp">
+                                    <rect key="frame" x="129.5" y="13" width="61.5" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="6Ql-JM-36i"/>
+                                <constraint firstAttribute="bottom" secondItem="C9N-4a-Vnp" secondAttribute="bottom" id="7L8-ms-HGA"/>
+                                <constraint firstItem="C9N-4a-Vnp" firstAttribute="top" secondItem="dNf-jM-PJo" secondAttribute="top" id="G9D-hg-Wy0"/>
+                                <constraint firstAttribute="trailing" secondItem="C9N-4a-Vnp" secondAttribute="trailing" id="UPZ-gF-STb"/>
+                                <constraint firstItem="rb8-q5-iBs" firstAttribute="leading" secondItem="dNf-jM-PJo" secondAttribute="leading" id="b7u-IP-GO6"/>
+                                <constraint firstItem="mQc-Ww-Jcp" firstAttribute="centerX" secondItem="dNf-jM-PJo" secondAttribute="centerX" id="eEE-26-BwQ"/>
+                                <constraint firstItem="rb8-q5-iBs" firstAttribute="top" secondItem="dNf-jM-PJo" secondAttribute="top" id="o6g-dU-jU0"/>
+                                <constraint firstAttribute="bottom" secondItem="rb8-q5-iBs" secondAttribute="bottom" id="uBP-li-ZME"/>
+                                <constraint firstItem="mQc-Ww-Jcp" firstAttribute="centerY" secondItem="dNf-jM-PJo" secondAttribute="centerY" id="yOH-Xx-cou"/>
+                            </constraints>
+                        </view>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3" userLabel="LocatePicker">
+                            <rect key="frame" x="0.0" y="44" width="320" height="216"/>
+                        </pickerView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="dNf-jM-PJo" firstAttribute="leading" secondItem="o7T-bJ-rhR" secondAttribute="leading" id="2EH-Rw-52Q"/>
+                        <constraint firstAttribute="bottom" secondItem="3" secondAttribute="bottom" id="ATK-nk-DJG"/>
+                        <constraint firstItem="3" firstAttribute="top" secondItem="dNf-jM-PJo" secondAttribute="bottom" id="AXA-Ih-jNb"/>
+                        <constraint firstItem="3" firstAttribute="leading" secondItem="o7T-bJ-rhR" secondAttribute="leading" id="Ctb-5Q-b6L"/>
+                        <constraint firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="DKE-dp-ROG"/>
+                        <constraint firstAttribute="trailing" secondItem="dNf-jM-PJo" secondAttribute="trailing" id="WIe-Ag-tzM"/>
+                        <constraint firstAttribute="height" constant="260" id="k9l-ZM-1Fz"/>
+                        <constraint firstItem="dNf-jM-PJo" firstAttribute="top" secondItem="o7T-bJ-rhR" secondAttribute="top" id="qPy-gO-Xbh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fKD-sy-LPW" secondAttribute="bottom" id="2dM-Sx-yHG"/>
+                <constraint firstItem="fKD-sy-LPW" firstAttribute="top" secondItem="1" secondAttribute="top" id="QX5-us-nq5"/>
+                <constraint firstAttribute="trailing" secondItem="o7T-bJ-rhR" secondAttribute="trailing" id="S1e-1P-IKv"/>
+                <constraint firstAttribute="trailing" secondItem="fKD-sy-LPW" secondAttribute="trailing" id="VVb-Sa-Qs4"/>
+                <constraint firstAttribute="bottom" secondItem="o7T-bJ-rhR" secondAttribute="bottom" id="Y3k-T8-VM6"/>
+                <constraint firstItem="o7T-bJ-rhR" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="dLN-oe-s9a"/>
+                <constraint firstItem="fKD-sy-LPW" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="o1D-Pj-Wc0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="fKD-sy-LPW" id="SoE-We-uhF"/>
+                <outlet property="locatePicker" destination="3" id="7"/>
+                <outlet property="mainView" destination="o7T-bJ-rhR" id="012-mh-nep"/>
+                <outlet property="titleLabel" destination="mQc-Ww-Jcp" id="Kbz-R4-rFn"/>
+            </connections>
+            <point key="canvasLocation" x="56" y="-58.920539730134934"/>
+        </view>
+        <tapGestureRecognizer id="VFD-jC-Era">
+            <connections>
+                <action selector="goCancel:" destination="1" id="zJE-k9-zxU"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="AppNetWorkingErrorTipView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4og-AX-j2a">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XU6-yk-J0h">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NetworkingError.png" translatesAutoresizingMaskIntoConstraints="NO" id="JzC-RP-ifB">
+                                    <rect key="frame" x="132" y="67" width="110" height="110"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您当前无法正常访问网络，请检查网络连接是否正常，或试试以下方法" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vU9-5z-2ND">
+                                    <rect key="frame" x="47" y="193" width="281" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.打开[设置]找到[幸福家经纪人]" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ohx-26-w73">
+                                    <rect key="frame" x="47" y="261" width="281" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppNetWorkingErrorStep1.png" translatesAutoresizingMaskIntoConstraints="NO" id="UN2-Qa-T0U">
+                                    <rect key="frame" x="43" y="287" width="267" height="46"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.点击进入并打开[无线数据]的[WLAN与蜂窝移动网]" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pe3-QJ-9D9">
+                                    <rect key="frame" x="47" y="341" width="281" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppNetWorkingErrorStep2.png" translatesAutoresizingMaskIntoConstraints="NO" id="tLx-rO-vjW">
+                                    <rect key="frame" x="43" y="385" width="267" height="46"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.重新打开幸福家经纪人APP" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYr-r4-1rP">
+                                    <rect key="frame" x="47" y="487" width="281" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppNetWorkingErrorStep3.png" translatesAutoresizingMaskIntoConstraints="NO" id="BXP-YF-Wvd">
+                                    <rect key="frame" x="43" y="439" width="267" height="40"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3I9-0D-IhL">
+                                    <rect key="frame" x="8" y="30" width="35" height="35"/>
+                                    <state key="normal" image="x.png"/>
+                                    <connections>
+                                        <action selector="goBack:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="FYL-xG-BLV"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="3I9-0D-IhL" firstAttribute="top" secondItem="XU6-yk-J0h" secondAttribute="top" constant="30" id="CLG-DP-ElL"/>
+                                <constraint firstItem="JzC-RP-ifB" firstAttribute="centerX" secondItem="XU6-yk-J0h" secondAttribute="centerX" id="Ctu-pX-MrI"/>
+                                <constraint firstItem="Ohx-26-w73" firstAttribute="leading" secondItem="vU9-5z-2ND" secondAttribute="leading" id="DEc-t3-bPx"/>
+                                <constraint firstItem="vU9-5z-2ND" firstAttribute="top" secondItem="JzC-RP-ifB" secondAttribute="bottom" constant="16" id="DFb-jW-qi0"/>
+                                <constraint firstItem="GYr-r4-1rP" firstAttribute="top" secondItem="BXP-YF-Wvd" secondAttribute="bottom" constant="8" id="DIc-Ty-aOJ"/>
+                                <constraint firstItem="Ohx-26-w73" firstAttribute="width" secondItem="vU9-5z-2ND" secondAttribute="width" id="EWr-xB-TZ2"/>
+                                <constraint firstItem="pe3-QJ-9D9" firstAttribute="top" secondItem="UN2-Qa-T0U" secondAttribute="bottom" constant="8" id="FSN-jF-S87"/>
+                                <constraint firstItem="tLx-rO-vjW" firstAttribute="top" secondItem="pe3-QJ-9D9" secondAttribute="bottom" constant="8" id="GTM-dM-Tww"/>
+                                <constraint firstItem="GYr-r4-1rP" firstAttribute="width" secondItem="vU9-5z-2ND" secondAttribute="width" id="OAV-Hf-3XF"/>
+                                <constraint firstItem="Ohx-26-w73" firstAttribute="top" secondItem="vU9-5z-2ND" secondAttribute="bottom" constant="32" id="Oek-gD-G7Q"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="GYr-r4-1rP" secondAttribute="bottom" constant="16" id="OhT-cU-ubL"/>
+                                <constraint firstItem="BXP-YF-Wvd" firstAttribute="leading" secondItem="pe3-QJ-9D9" secondAttribute="leading" constant="-4" id="Pn6-4Y-UWn"/>
+                                <constraint firstItem="UN2-Qa-T0U" firstAttribute="top" secondItem="Ohx-26-w73" secondAttribute="bottom" constant="8" id="S2Z-wq-I5s"/>
+                                <constraint firstItem="tLx-rO-vjW" firstAttribute="leading" secondItem="pe3-QJ-9D9" secondAttribute="leading" constant="-4" id="Tsh-i9-hgh"/>
+                                <constraint firstItem="JzC-RP-ifB" firstAttribute="top" secondItem="XU6-yk-J0h" secondAttribute="top" constant="67" id="VmY-ut-dIy"/>
+                                <constraint firstItem="pe3-QJ-9D9" firstAttribute="leading" secondItem="Ohx-26-w73" secondAttribute="leading" id="bKk-zD-EZF"/>
+                                <constraint firstItem="BXP-YF-Wvd" firstAttribute="top" secondItem="tLx-rO-vjW" secondAttribute="bottom" constant="8" id="c0y-Kf-qDK"/>
+                                <constraint firstItem="GYr-r4-1rP" firstAttribute="leading" secondItem="pe3-QJ-9D9" secondAttribute="leading" id="grM-sN-p9P"/>
+                                <constraint firstItem="UN2-Qa-T0U" firstAttribute="leading" secondItem="Ohx-26-w73" secondAttribute="leading" constant="-4" id="h4O-9E-nhp"/>
+                                <constraint firstItem="vU9-5z-2ND" firstAttribute="centerX" secondItem="XU6-yk-J0h" secondAttribute="centerX" id="jla-GV-sGQ"/>
+                                <constraint firstItem="pe3-QJ-9D9" firstAttribute="width" secondItem="vU9-5z-2ND" secondAttribute="width" id="tT1-9l-OZb"/>
+                                <constraint firstItem="3I9-0D-IhL" firstAttribute="leading" secondItem="XU6-yk-J0h" secondAttribute="leading" constant="8" id="u5i-6g-vOd"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="XU6-yk-J0h" secondAttribute="bottom" id="6lW-Tg-J9L"/>
+                        <constraint firstItem="XU6-yk-J0h" firstAttribute="top" secondItem="4og-AX-j2a" secondAttribute="top" id="KaP-WW-eTN"/>
+                        <constraint firstItem="XU6-yk-J0h" firstAttribute="leading" secondItem="4og-AX-j2a" secondAttribute="leading" id="Nl6-zM-X3c"/>
+                        <constraint firstAttribute="trailing" secondItem="XU6-yk-J0h" secondAttribute="trailing" id="hsd-dr-B4X"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4og-AX-j2a" secondAttribute="trailing" id="B2m-gR-Ddf"/>
+                <constraint firstItem="vU9-5z-2ND" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="3/4" id="MZ1-f3-1eY"/>
+                <constraint firstItem="XU6-yk-J0h" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" priority="750" constant="1" id="RD6-Ul-yPQ"/>
+                <constraint firstItem="4og-AX-j2a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SBF-XS-LGL"/>
+                <constraint firstItem="4og-AX-j2a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="U02-1j-9v4"/>
+                <constraint firstAttribute="bottom" secondItem="4og-AX-j2a" secondAttribute="bottom" id="WEQ-zS-muw"/>
+                <constraint firstItem="XU6-yk-J0h" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="tvd-ez-gZZ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AppNetWorkingErrorStep1.png" width="267" height="46"/>
+        <image name="AppNetWorkingErrorStep2.png" width="267" height="46"/>
+        <image name="AppNetWorkingErrorStep3.png" width="267" height="40"/>
+        <image name="NetworkingError.png" width="110" height="110"/>
+        <image name="x.png" width="35" height="35"/>
+    </resources>
+</document>

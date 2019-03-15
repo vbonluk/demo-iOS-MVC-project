@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppPermissionsTipView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AppPermissionsTipView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gdx-qw-mtC">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Awy-kV-3YM">
+                    <rect key="frame" x="30" y="196.5" width="260" height="175"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无法获取您的位置信息" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGg-NK-0Tr">
+                            <rect key="frame" x="8" y="25" width="244" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请在iPhone的“设置-隐私-定位服务”选项中打开定位服务，并允许幸福家经纪人使用定位服务" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dji-5n-hR9">
+                            <rect key="frame" x="16" y="60.5" width="228" height="54"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPI-dd-fex">
+                            <rect key="frame" x="0.0" y="130.5" width="260" height="0.5"/>
+                            <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="e2t-Ij-8Mm"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iMD-0e-6Ap">
+                            <rect key="frame" x="130" y="131" width="0.5" height="44"/>
+                            <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="0.5" id="KMw-n4-cwl"/>
+                                <constraint firstAttribute="height" constant="44" id="Y9i-m6-WYe"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP3-bN-Rmg">
+                            <rect key="frame" x="0.0" y="131" width="130" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="goCancel:" destination="iN0-l3-epB" eventType="touchUpInside" id="RpT-I7-shk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVf-7q-Uco">
+                            <rect key="frame" x="130.5" y="131" width="129.5" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="立即开启">
+                                <color key="titleColor" red="0.98431372549999996" green="0.31764705879999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="goConfirm:" destination="iN0-l3-epB" eventType="touchUpInside" id="fhF-2G-rvm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="iMD-0e-6Ap" firstAttribute="centerX" secondItem="Awy-kV-3YM" secondAttribute="centerX" id="3Yv-LT-p82"/>
+                        <constraint firstItem="iMD-0e-6Ap" firstAttribute="leading" secondItem="eP3-bN-Rmg" secondAttribute="trailing" id="6Ch-qp-RWU"/>
+                        <constraint firstItem="eP3-bN-Rmg" firstAttribute="top" secondItem="OPI-dd-fex" secondAttribute="bottom" id="Aaf-f6-fw0"/>
+                        <constraint firstAttribute="width" constant="260" id="Dfb-0V-sUw"/>
+                        <constraint firstItem="kGg-NK-0Tr" firstAttribute="leading" secondItem="Awy-kV-3YM" secondAttribute="leading" constant="8" id="I6O-ah-cId"/>
+                        <constraint firstAttribute="trailing" secondItem="Dji-5n-hR9" secondAttribute="trailing" constant="16" id="IaA-ig-SsY"/>
+                        <constraint firstAttribute="trailing" secondItem="OPI-dd-fex" secondAttribute="trailing" id="MNd-o0-X5I"/>
+                        <constraint firstItem="KVf-7q-Uco" firstAttribute="top" secondItem="OPI-dd-fex" secondAttribute="bottom" id="PEy-D2-6gK"/>
+                        <constraint firstItem="iMD-0e-6Ap" firstAttribute="top" secondItem="OPI-dd-fex" secondAttribute="bottom" id="PyZ-ue-IRY"/>
+                        <constraint firstItem="eP3-bN-Rmg" firstAttribute="leading" secondItem="Awy-kV-3YM" secondAttribute="leading" id="VcH-ge-z8S"/>
+                        <constraint firstItem="OPI-dd-fex" firstAttribute="top" secondItem="Dji-5n-hR9" secondAttribute="bottom" constant="16" id="aa4-Wa-zoe"/>
+                        <constraint firstItem="Dji-5n-hR9" firstAttribute="top" secondItem="kGg-NK-0Tr" secondAttribute="bottom" constant="16" id="dlQ-Rb-Kjq"/>
+                        <constraint firstAttribute="bottom" secondItem="iMD-0e-6Ap" secondAttribute="bottom" id="hEA-Kk-VcO"/>
+                        <constraint firstItem="Dji-5n-hR9" firstAttribute="leading" secondItem="Awy-kV-3YM" secondAttribute="leading" constant="16" id="iZH-gK-Oep"/>
+                        <constraint firstAttribute="bottom" secondItem="eP3-bN-Rmg" secondAttribute="bottom" id="jc8-5u-uXg"/>
+                        <constraint firstAttribute="trailing" secondItem="kGg-NK-0Tr" secondAttribute="trailing" constant="8" id="lii-DM-EFL"/>
+                        <constraint firstAttribute="trailing" secondItem="KVf-7q-Uco" secondAttribute="trailing" id="pmH-Z5-Ch8"/>
+                        <constraint firstItem="KVf-7q-Uco" firstAttribute="leading" secondItem="iMD-0e-6Ap" secondAttribute="trailing" id="rfU-wZ-aFm"/>
+                        <constraint firstItem="OPI-dd-fex" firstAttribute="leading" secondItem="Awy-kV-3YM" secondAttribute="leading" id="s5e-aU-RYT"/>
+                        <constraint firstAttribute="bottom" secondItem="KVf-7q-Uco" secondAttribute="bottom" id="sLJ-Xq-g2A"/>
+                        <constraint firstItem="kGg-NK-0Tr" firstAttribute="top" secondItem="Awy-kV-3YM" secondAttribute="top" constant="25" id="scz-OP-gH0"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Gdx-qw-mtC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2vg-5m-bq0"/>
+                <constraint firstItem="Awy-kV-3YM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="4c7-fz-8fx"/>
+                <constraint firstItem="Awy-kV-3YM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8YR-8P-Elw"/>
+                <constraint firstItem="Gdx-qw-mtC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Gb9-jY-5tD"/>
+                <constraint firstAttribute="trailing" secondItem="Gdx-qw-mtC" secondAttribute="trailing" id="RGU-LN-aPH"/>
+                <constraint firstAttribute="bottom" secondItem="Gdx-qw-mtC" secondAttribute="bottom" id="lFp-iL-MKh"/>
+            </constraints>
+            <connections>
+                <outlet property="bgView" destination="Gdx-qw-mtC" id="Xsx-wk-3bz"/>
+                <outlet property="contentLabel" destination="Dji-5n-hR9" id="0vC-kI-Vfq"/>
+                <outlet property="mainView" destination="Awy-kV-3YM" id="05z-Wm-zPc"/>
+                <outlet property="tipTitleLabel" destination="kGg-NK-0Tr" id="Or4-Sy-npy"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+</document>
