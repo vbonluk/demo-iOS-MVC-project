@@ -1,11 +1,10 @@
 # demo 编码规范(请使用MARKDOWN工具打开此文件以显示图片)
 
-
 本项目基于：[https://github.com/vbonluk/demo-iOS-MVC-project](https://github.com/vbonluk/demo-iOS-MVC-project)
 
 欢迎star我的GitHub项目
 
-如需迁移，您可以使用：[https://github.com/vbonluk/demo-iOS-MVC-project](https://github.com/vbonluk/Project-Rebuilder)
+如需迁移，您可以使用：[https://github.com/vbonluk/Project-Rebuilder](https://github.com/vbonluk/Project-Rebuilder)
 
 ### 一、类名 (Class)
 
