@@ -4,7 +4,7 @@
 
 欢迎star我的GitHub项目
 
-如需迁移，您可以使用：[https://github.com/vbonluk/demo-iOS-MVC-project](https://github.com/vbonluk/Project-Rebuilder)
+如需迁移，您可以使用：[https://github.com/vbonluk/Project-Rebuilder](https://github.com/vbonluk/Project-Rebuilder)
 
 
 	1.主目录结构
